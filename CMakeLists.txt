@@ -11,9 +11,10 @@ add_definitions(-DIF_OFFICIAL=0)
 ### Cmake flags
 ######################
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -pthread")
 
+set(Ceres_DIR "/home/yicheng/Libraries/Install/Ceres/2.0.0/lib/cmake/Ceres")
 ######################
 ### Packages
 ######################

@@ -15,8 +15,6 @@
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 
-#include <opencv/cv.h>
-
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <pcl/search/impl/search.hpp>
@@ -55,7 +53,8 @@
 #include <thread>
 #include <mutex>
 #include <unordered_map>
-
+// INFO 该引用需要放在pcl引用之后，不然会报错
+#include <opencv2/opencv.hpp>
 using namespace std;
 
 typedef pcl::PointXYZI PointType;

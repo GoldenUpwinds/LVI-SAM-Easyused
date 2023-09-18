@@ -1,3 +1,4 @@
+本仓库用于适配ROS-noetic与OpenCV4
 # LVI-SAM-Easyused
 
 本仓库包含 [LVI-SAM](https://github.com/TixiaoShan/LVI-SAM) 的修改代码以便于使用，目的是解决原始的 LVI-SAM 外参配置混乱的问题。使用这份代码，你只需要配置 LiDAR 和 IMU 之间的外参 （**T_imu_lidar**）、Camera 和 IMU 之间的外参 （**T_imu_camera**），以及 IMU 本身的属性 （**绕着哪个坐标轴逆时针旋转输出正的欧拉角**），然后你就可以在不同的设备上运行 LVI-SAM 。
